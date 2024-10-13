@@ -1,99 +1,94 @@
-@keyframes popOut {
-  0% {
-      transform: scale(0.5);
-      opacity: 0;
-  }
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
+* {
+  
+  box-sizing: border-box;
+  
+  font-family: kanit;
 }
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #746ce0, #e982e7);
-    margin: 0;
-    padding: 20px;
-  }
-  
-  .card-container {
-    
-    display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
-    font-family: kanit;
 
-    gap: 50px;
-    padding: 20px;
-  }
-  
-  .card {
-    background: linear-gradient(to right, #746ce0, #e982e7);
-    border: 2px black;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    padding: 20px;
-    padding-bottom: 30px;
-  }
-  
-  .card h3 {
-    
-    text-transform: uppercase;
-    font-family: kanit;
-    font-weight: 800px;
-    font-style: bold;
-    margin: 0 0 10px;
-    font-size: 30px;
-    color: black;
-    transition: color 0.3s ease;
-    padding-bottom: 30px;
-    animation: popOut 2s ease ;
-  }
-  
-  .card p {
-    
+.wrapper {
+  background: linear-gradient(to right, #746ce0, #e982e7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-    font-family: crimson pro;
-    font-style: bold;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 10px 0;
-    color: black;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-    
-  }
+.container {
   
-  .toggle {
-    color: white;
-    cursor: pointer;
-    text-decoration: underline;
-    font-family: crimson pro;
-    font-size: 30px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  overflow: hidden;
+}
+
+.card {
+  width: 80px;
+  border-radius: 0.75rem;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(255, 255, 255, 0.8);
+}
+
+.card.active {
+  width: 600px;
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #000;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card > .row > .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  padding-bottom: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.3s ease;
+}
+
+.card.active .description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.description p {
+  align-items: center;
+  color: #000;
+  padding-top: 5px;
   
-  .card:hover {
-    
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
+}
+
+.description h4 {
+  text-transform: uppercase;
+  color: #000;
+  font-family: kanit;
+  font-weight: 400;
+  font-size: 26px;
   
-  .card:hover h3 {
-    color: white; /* Change title color on hover */
-  }
-  
-  .card:hover .toggle {
-    color:white; /* Change toggle color on hover */
-  }
-  
-  /* Media Query for Responsiveness */
-  @media (max-width: 600px) {
-    .card-container {
-      grid-template-columns: 1fr; /* Single column on smaller screens */
-    }
-  }
-  
+}

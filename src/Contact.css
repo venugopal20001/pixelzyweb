@@ -1,5 +1,9 @@
 /* Container for the contact form */
+.Container{
+  background: linear-gradient(to right, #746ce0, #e982e7);
+}
 .contact-container {
+  background: linear-gradient(to right, #746ce0, #e982e7);
     width: 100%;
     max-width: 600px;
     margin: 0 auto;

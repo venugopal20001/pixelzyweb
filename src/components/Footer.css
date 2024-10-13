@@ -1,0 +1,59 @@
+.footer {
+    font-family: kanit;
+    text-transform: uppercase;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+    
+    color: white;
+    background: linear-gradient(to right, #746ce0, #e982e7);
+
+
+  }
+  
+  .footer-left {
+    flex: 1;
+    
+  }
+  
+  .footer-left h3 {
+    margin: 0;
+    align-items: start;
+    font-size: 1.5rem;
+    
+  }
+  
+  .footer-right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .social-icons {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between social icons */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline;
+    text-decoration: underline;
+    font-weight: 500;
+
+   
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .social-icons a:hover {
+    color: #ff4500; /* Change to a highlight color when hovered */
+  }
+  

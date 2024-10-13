@@ -4,6 +4,7 @@ import './Projects.css';            // Import the CSS for Projects component
 
 const Projects = () => {
   return (
+    
     <div className="projects-container">
       <h1 className="projects-title">My Website Projects</h1>
       <p className="projects-description">
@@ -15,6 +16,7 @@ const Projects = () => {
       {/* Include the carousel below the title and paragraph */}
       <Carousel />
     </div>
+    
   );
 };
 

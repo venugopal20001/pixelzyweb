@@ -6,7 +6,7 @@
 }
 
 .text-section {
-  display: flex; /* Use flexbox for the text section */
+  display: block; /* Use flexbox for the text section */
   justify-content: space-between; /* Space out the items evenly */
   width: 100%; /* Full width to spread items across */
   max-width: 1200px; /* Optional: Limit the max width */

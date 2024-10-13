@@ -34,10 +34,7 @@
     }
   }
   
-  .hero-content {
-    max-width: 600px;
-    
-  }
+  
   
   .hero-title {
     font-family:kanit;
@@ -50,7 +47,9 @@
  
   .hero-des{
     font-family: kanit;
-    font-size: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    text-wrap: nowrap;
     color:white;
 
 
