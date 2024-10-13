@@ -1,0 +1,98 @@
+/* Container for the contact form */
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: kanit;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: larger;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+  
+  /* Title styling */
+  .contact-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input and textarea styling */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: crimson pro;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  /* On focus, inputs will have a border color change */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: black;
+  }
+  
+  /* Textarea specific styling */
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  /* Stylish submit button */
+  .submit-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-family: kanit;
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect on submit button */
+  .submit-button:hover {
+    background-color: black;
+    transform: scale(1.05);
+  }
+  
+  /* Adding box shadow to button when clicked */
+  .submit-button:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
+  }
+  
+  /* Input placeholder styling */
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+  }
+  
